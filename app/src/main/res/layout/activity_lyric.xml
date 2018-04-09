@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.evenmusic.LyricActivity">
+
+    <include layout="@layout/title_bar_lrc"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/colorBlack"
+            android:text="刀锋偏冷"/>
+
+        <TextView
+            android:id="@+id/tv_artist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="14sp"
+            android:textColor="@color/colorTextGray"
+            android:text="李宇春"/>
+    </LinearLayout>
+
+    <me.zhengken.lyricview.LyricView
+        android:id="@+id/lyric_view"
+        android:layout_width="323dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center_horizontal"
+        android:maxHeight="200dp"
+        android:minHeight="20dp"
+        app:highlightColor="@color/colorAccent"
+        app:hint="@string/app_name"
+        app:hintColor="@color/colorTextGray"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="320dp" />
+
+</LinearLayout>
